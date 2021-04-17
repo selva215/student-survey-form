@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Projects - Survey Form</title>
+    <meta charset="utf-8">
+<script>
+   #main{
+  width:80%;
+  margin:auto;
+  background-color:ffffff;
+}
+#title{
+  text-align:center;
+  font-size: 42px;
+  color: #333333;
+}
+
+#survey-form,p{
+  
+  font-size:16px;
+  font-family:helvetica, sans-serif;
+  margin-left: 20%;
+  margin: auto;
+   background-color:#d4d4d4;
+  width: 60%;
+  padding: 1%;
+}
+
+#name-label, #email-label, #number-label,#name,#email, #number,#drop-down,label,fieldset,#comments{
+  
+  margin-top:30px;
+  padding:10px;
+  width: 150px;
+  align:right;
+}
+</script>
+</head>
+<body>
+<div id-"main">
+  <div style="background-color:violet;width:1500px;border:1px solid black;padding:15px;">
+<h1 id="title"> Student Survey Form</h1>
+<p id="description">This is a survey form for techschool.</p>
+
+<form id="survey-form">
+  <label id="name-label" for="name">*Name</label>
+ <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+  <br><br>
+ <label id="email-label" for="email">*Email</label>
+ <input type="email" name="email" id="email" placeholder="test@gmail.com" required>
+  <br><br>
+  <label id="number-label" for="number">*Roll No</label>
+ <input type="number" name="number" id="number" placeholder="Enter roll number" min="0" max="100" required>
+  <br><br>
+  <action="/action_page.php">
+  <label for="bdaymonth">*Date of Birth:</label>
+  <input type="month" id="bdaymonth" name="bdaymonth">
+  <input type="submit" value="Submit">
+  <br><br>
+  <label id="number-label" for="number">*Age</label>
+ <input type="number" name="number" id="number" placeholder="Enter your Age" min="0" max="100" required>
+  <br><br>
+  <label id="number-label" for="number">*Mobile Number</label>
+ <input type="number" name="number" id="number" placeholder="Enter Your Mobile No" required>
+ <br><br>
+  <label id="name-label" for="Nationality">*Nationality</label>
+ <input type="text" name="Nationality" id="Nationality" placeholder="Enter Your Nationality" required>
+ <br><br>
+  <!-- Dropdown starts here -->
+  <label for="drop-down">*How do you rate our courses?</label>
+  <select name="drop-down" id="drop-down">
+    <option value="Excellent">Excellent
+    </option>
+    <option value="Good">Good
+    </option>
+    <option value="Fair">Fair
+    </option>
+    <option value="Poor">Poor
+    </option>
+  </select>
+  <br><br>
+  <label for="drop-down">*Gender</label>
+  <select name="drop-down" id="drop-down">
+    <option value="Male">Male
+    </option>
+    <option value="Female">Female
+    </option>
+    <option value="Others">Others
+    </option>
+  </select>
+  <br><br>
+  <!-- Fieldset begins here-->
+  <fieldset>
+    <legend>*Which is your favorite course?</legend>
+       <input type="radio" name="course" id="science" value="Science">
+    <label for="science">Science</label>
+    <br><br>
+   
+       <input type="radio" name="course" id="math" value="Math">
+     <label for="math">Mathematics</label>
+    <br><br>
+    
+       <input type="radio" name="course" id="art" value="Art">
+    <label for="art">Art</label>
+  </fieldset>
+  <fieldset>
+    <legend>*Which is your favorite place?</legend>
+       <input type="radio" name="place" id="playground" value="playground">
+    <label for="playground">playground</label>
+    <br><br>
+   
+       <input type="radio" name="place" id="swimmimg pool" value="Math">
+     <label for="swimmimg pool">swimming pool</label>
+    <br><br>
+    
+       <input type="radio" name="place" id="auditorium" value="Art">
+    <label for="auditorium">auditorium</label>
+  </fieldset>
+   <!-- Whaat do you like about techschool.com -->
+     <!-- Fieldset begins here-->
+  <fieldset>
+    <legend>*What do you like about techschool.com ?</legend>
+       <input type="checkbox" name="school" id="classes" value="Classes">
+    <label for="classes">Classes</label>
+    <br><br>
+   
+       <input type="checkbox" name="school" id="teachers" value="teachers">
+     <label for="teachers">Teachers</label>
+    <br><br>
+    
+       <input type="checkbox" name="school" id="culture" value="Food">
+    <label for="culture">Culture</label>
+  </fieldset>
+  <!-- Textarea begins -->
+  
+  <textarea id="comments" rows="5" columns="500">
+*Enter your Hobbies.
+  </textarea><br><br>
+  <textarea id="comments" rows="5" columns="500">
+*Help us improve. Enter your suggestions.
+  </textarea><br><br>
+  <textarea id="comments" rows="5" columns="500">
+*Enter your Extra curricular Activities.
+  </textarea><br><br>
+  <textarea id="comments" rows="5" columns="500">
+*Enter something about your inspirational person.
+  </textarea><br><br>
+  <!-- submit button -->
+  <input type="submit" id="submit" value="Submit">
+  </form>
+</div>
+</div>
+</body>
+</html>
